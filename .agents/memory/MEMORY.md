@@ -1,0 +1,2 @@
+- [GitHub empty repository bootstrap](github-empty-repo-bootstrap.md) — seed an empty GitHub repository through Contents API before using Git Database writes.
+- [Clerk and Next compatibility](clerk-next-compatibility.md) — use Core 3 auth state, Next 16 proxy context, and a matching external Clerk key pair.

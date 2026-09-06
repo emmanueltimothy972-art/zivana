@@ -22,6 +22,13 @@ npm run lint
 npm run build
 ```
 
-The project currently contains a public landing page at `/` and a static
-workspace shell at `/dashboard`. Authentication, persistence, and product
-services are intentionally not connected yet.
+The project contains a public operator landing page at `/`, Clerk sign-in and
+sign-up routes, and an organization-aware protected command center at
+`/dashboard`. The UI is mission-centric and intentionally honest: objective
+capture is browser-local only, while persistence, model routing, workers,
+execution, and financial measurement are not connected yet.
+
+The mission lifecycle and future subsystem contracts are documented under
+`features/`. Keep authentication and organization authorization server-side,
+and keep future external actions behind explicit approval and verification
+boundaries.

@@ -1,22 +1,18 @@
 import Link from "next/link";
 import { BrandMark } from "./brand-mark";
+import { PublicAuthActions } from "./auth/public-auth-actions";
 
 export function SiteHeader() {
   return (
-    <header className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-6 lg:px-8">
+    <header className="mx-auto flex w-full max-w-[1440px] items-center justify-between px-6 py-6 lg:px-10">
       <Link href="/" aria-label="Zivana home">
-        <BrandMark />
+        <BrandMark tone="light" />
       </Link>
-      <nav className="flex items-center gap-5 text-sm font-medium text-[#66736a]">
-        <Link className="hidden transition-colors hover:text-[#17211c] sm:block" href="#about">
-          About
+      <nav className="flex items-center gap-5 text-sm font-medium text-[#8f9e95]">
+        <Link className="hidden transition-colors hover:text-[#f5f7f3] sm:block" href="#operator-loop">
+          How it works
         </Link>
-        <Link
-          className="rounded-full bg-[#17211c] px-4 py-2.5 text-[#f7f8f5] transition-transform hover:-translate-y-0.5"
-          href="/dashboard"
-        >
-          Open workspace
-        </Link>
+        <PublicAuthActions />
       </nav>
     </header>
   );

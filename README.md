@@ -1,7 +1,8 @@
 # Zivana
 
-Zivana is a Next.js foundation for a focused workspace that turns ambitious
-work into meaningful momentum.
+Zivana is a Next.js foundation for an autonomous AI operator: a
+mission-centric command surface for turning high-level objectives into
+measurable outcomes over time.
 
 ## Stack
 
@@ -27,5 +28,19 @@ npm run typecheck
 npm run build
 ```
 
-The current `/dashboard` route is a static product shell. Authentication,
-database persistence, and product capabilities are intentionally not wired yet.
+The public landing page is available at `/`. Clerk protects `/dashboard`,
+with sign-in and sign-up handled at `/sign-in` and `/sign-up`. The dashboard
+is an organization-aware command center with a browser-local mission objective
+composer, lifecycle model, and explicit empty states. Persistence, model
+routing, workers, real-world execution, and financial measurement are
+intentionally not wired yet.
+
+## Product foundation
+
+The core loop is modeled as:
+
+`Objective → Understand → Discover → Evaluate → Plan → Approve → Execute → Verify → Measure → Record → Learn → Replan`
+
+Mission, intelligence, execution, and outcome contracts live under
+`features/`. They are boundaries for future server-side systems, not fake
+implementations.
